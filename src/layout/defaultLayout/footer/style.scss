@@ -1,0 +1,31 @@
+.footer_content {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  &_link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &_list {
+      display: flex;
+      align-items: start;
+      & > li {
+        margin-right: 20px;
+        & > a > i {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+.footer {
+  border-top: 1px solid;
+  padding: 0 60px;
+  margin: 60px;
+  display: flex;
+  align-items: center;
+  min-height: 300px;
+}
+ul {
+  list-style: none;
+}

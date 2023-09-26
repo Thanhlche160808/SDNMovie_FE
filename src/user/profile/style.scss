@@ -1,0 +1,106 @@
+@import "../../style.module.scss";
+.profile {
+  margin-top: 100px;
+  &_header {
+    text-align: start;
+    margin-bottom: 10px;
+    & > h3 {
+      display: block;
+      font-family: "Rubik", sans-serif;
+      font-weight: 400;
+      color: #fff;
+      font-size: 38px;
+      line-height: 120%;
+    }
+  }
+  &_body {
+    margin-top: 40px;
+    &_top {
+      background-color: #151f30;
+      border-radius: 16px;
+      &_info {
+        padding: 15px;
+        display: flex;
+        color: #fff;
+        flex-wrap: wrap;
+        align-items: center;
+        &_avatar {
+          width: 50px;
+          height: 50px;
+          margin-right: 10px;
+          margin-left: 20px;
+          & > img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+          }
+        }
+        &_user {
+          display: flex;
+          width: 15%;
+          @include mobile {
+            width: 70%;
+          }
+          flex-direction: column;
+          justify-content: center;
+          align-items: start;
+          margin: 0 10px;
+          & > h3 {
+            margin-bottom: 0;
+            font-size: 20px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+          }
+        }
+        &_option {
+          width: 60%;
+          display: flex;
+          height: 100%;
+          @include mobile {
+            margin-top: 20px;
+          }
+          &_item {
+            width: 16%;
+            @include mobile {
+              width: 50%;
+            }
+            cursor: pointer;
+            height: 100%;
+            transition: 0.5s;
+            &:hover {
+              color: #2f80ed;
+            }
+          }
+        }
+        &_out {
+          flex: 1;
+          justify-content: right;
+          transition: 0.5s;
+          @include mobile {
+            margin-top: 20px;
+          }
+          cursor: pointer;
+          &:hover {
+            color: #2f80ed;
+          }
+          & > i {
+            color: #2f80ed;
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+.user_mark {
+  background-color: #151f30;
+  border-radius: 16px;
+  padding-bottom: 30px;
+}
+.active {
+  color: #2f80ed;
+}

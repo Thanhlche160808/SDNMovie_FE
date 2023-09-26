@@ -1,0 +1,102 @@
+@import "../../../style.module.scss";
+.left_type {
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  @include mobile {
+    margin-left: 0;
+  }
+  &_header {
+    text-align: start;
+    margin-bottom: 20px;
+    & > h2 {
+      color: #fff;
+      font-family: "Rubik", sans-serif;
+      font-weight: 400;
+      line-height: 120%;
+    }
+  }
+  &_body {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    & > img {
+      width: calc(50% - 20px);
+      @include mobile {
+        width: 100%;
+        margin-left: 0;
+      }
+      margin-left: 20px;
+      height: 400px;
+      object-fit: cover;
+    }
+    &_content {
+      width: calc(50%);
+      @include mobile {
+        width: 100%;
+        margin-top: 10px;
+      }
+      text-align: start;
+      display: flex;
+      flex-direction: column;
+      & > h3 {
+        color: #fff;
+        font-family: "Rubik", sans-serif;
+        font-weight: 400;
+        line-height: 120%;
+        color: #2f80ed;
+      }
+      & > p {
+        color: #fff;
+        font-weight: 400;
+        line-height: 1.8;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 5;
+        -webkit-box-orient: vertical;
+      }
+      &_info {
+        display: flex;
+        margin: 10px 0;
+        & > span {
+          width: 20%;
+          text-align: center;
+          color: #fff;
+          & > i {
+            color: #2f80ed;
+            margin-left: 10px;
+          }
+        }
+      }
+      &_option {
+        margin: auto 0;
+        & > button {
+          padding: 10px 46px;
+          margin-right: 20px;
+          border-radius: 10px;
+          border: none;
+          outline: none;
+          &:hover > span {
+            color: #000;
+          }
+          &:hover > i {
+            color: #000;
+          }
+          & > span {
+            font-size: 20px;
+            color: #fff;
+            font-weight: 400;
+            margin-left: 10px;
+            transition: 0.3s;
+          }
+          & > i {
+            font-size: 20px;
+            color: #fff;
+            transition: 0.3s;
+          }
+        }
+      }
+    }
+  }
+}

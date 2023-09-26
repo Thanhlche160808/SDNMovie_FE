@@ -1,0 +1,33 @@
+.login {
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+  background-color: #11141a;
+  &_wrap {
+    padding: 40px;
+    background-color: #131720;
+    min-width: 400px;
+    border: 1px solid #151f30;
+    border-radius: 16px;
+    & > h3 {
+      font-size: 40px;
+      margin-bottom: 20px;
+      color: #fff;
+    }
+    &_content {
+      display: flex;
+      flex-direction: column;
+      & > input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border-radius: 16px;
+        outline: none;
+        font-size: 16px;
+      }
+    }
+  }
+}
+.login_register:hover {
+  color: #007bff;
+}

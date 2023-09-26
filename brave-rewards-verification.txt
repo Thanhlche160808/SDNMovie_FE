@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: animene.site
+Token: 3450c9ed4fd4038cc26bfdb6b60068336edbf478829f6440cf9ceba165ac9cf5
